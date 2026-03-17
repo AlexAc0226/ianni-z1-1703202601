@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Hero } from "./components/Hero";
 import { Services } from "./components/Services";
-import { Gallery } from "./components/Gallery";
+// import { Gallery } from "./components/Gallery";
 import { HowWeWork } from "./components/HowWeWork";
 import { Urgencies } from "./components/Urgencies";
 import { Benefits } from "./components/Benefits";
@@ -19,7 +19,7 @@ export default function HomePage() {
     <div className="min-h-screen">
       <Hero />
       <Services />
-      <Gallery />
+      {/* <Gallery /> */}
       <HowWeWork />
       <Urgencies />
       <Benefits />
