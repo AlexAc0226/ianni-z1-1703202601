@@ -7,7 +7,7 @@ import { Logo } from "../components/Logo";
 import { Footer } from "../components/Footer";
 import { WhatsAppButton } from "../components/WhatsAppButton";
 import { WhatsAppMessage } from "../components/WhatsAppMessage";
-import { useState } from "react";
+import { Suspense, useState } from "react";
 
 export default function CalculatorPage() {
   const router = useRouter();
@@ -32,7 +32,9 @@ export default function CalculatorPage() {
       </header>
 
       <main className="pb-20">
-        <Calculator />
+        <Suspense fallback={<div className="text-center py-10">Cargando...</div>}>
+          <Calculator />
+        </Suspense>
       </main>
 
       <Footer />
